@@ -9,7 +9,7 @@ const InfoDisplay: FC<InfoDisplayProps> = ({ info }) => {
         <div className="mt-4 py-4 rounded px-9">
             {info
                 ? info
-                : "Tugmalardan birini bosing, ma'lumotlar bu yerda ko'rinadi."}
+                : "Tugmalardan birini bosing, ma&#39;lumotlar bu yerda ko&#39;rinadi."}
         </div>
     );
 };

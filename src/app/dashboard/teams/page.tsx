@@ -20,16 +20,20 @@ const Teams = () => {
                 setInfo(<CoruselComponent />);
                 break;
             case "Developer":
-                setInfo("Developer ma'lumotlari bu yerda ko'rsatiladi.");
+                setInfo(
+                    "Developer ma&#39;lumotlari bu yerda ko&#39;rsatiladi."
+                );
                 break;
             case "Project Manager":
-                setInfo("Project Manager ma'lumotlari bu yerda ko'rsatiladi.");
+                setInfo(
+                    "Project Manager ma&#39;lumotlari bu yerda ko&#39;rsatiladi."
+                );
                 break;
             case "HR":
-                setInfo("HR ma'lumotlari bu yerda ko'rsatiladi.");
+                setInfo("HR ma&#39;lumotlari bu yerda ko&#39;rsatiladi.");
                 break;
             case "Other":
-                setInfo("Other ma'lumotlari bu yerda ko'rsatiladi.");
+                setInfo("Other ma&#39;lumotlari bu yerda ko&#39;rsatiladi.");
                 break;
             default:
                 setInfo("");

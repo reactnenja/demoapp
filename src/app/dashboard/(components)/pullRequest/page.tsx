@@ -1,6 +1,6 @@
-"use client";
-
+// "use client";
 import { TrendingUp } from "lucide-react";
+import React from "react";
 import { Area, AreaChart, CartesianGrid, XAxis } from "recharts";
 
 import {
@@ -37,7 +37,7 @@ const chartConfig = {
     },
 } satisfies ChartConfig;
 
-export function PullRequest() {
+const PullRequest: React.FC = () => {
     return (
         <Card>
             <CardHeader>
@@ -103,4 +103,5 @@ export function PullRequest() {
             </CardFooter>
         </Card>
     );
-}
+};
+export default PullRequest;

@@ -8,6 +8,7 @@ import {
     DropdownMenuSeparator,
     DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import Image from "next/image";
 
 const Header = () => {
     return (
@@ -18,7 +19,7 @@ const Header = () => {
                     <div className="flex gap-2">
                         <DropdownMenu>
                             <DropdownMenuTrigger className="border-slate-600 rounded-full border-2">
-                                <img
+                                <Image
                                     src="https://i.pravatar.cc/300"
                                     className="h-10 w-10 rounded-full "
                                     alt=""

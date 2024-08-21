@@ -62,7 +62,7 @@ export function RoundedData() {
             <CardHeader className="items-center pb-0">
                 <CardTitle>Projects</CardTitle>
                 <CardDescription>
-                    View and manage your team's projects.
+                    View and manage your teams projects.
                 </CardDescription>
             </CardHeader>
             <CardContent className="flex-1">

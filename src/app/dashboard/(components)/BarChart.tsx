@@ -33,7 +33,7 @@ const chartConfig = {
     },
 } satisfies ChartConfig;
 
-export function BarChartComponents() {
+const BarChartComponents: React.FC = () => {
     return (
         <Card>
             <CardHeader>
@@ -75,4 +75,6 @@ export function BarChartComponents() {
             </CardFooter>
         </Card>
     );
-}
+};
+
+export default BarChartComponents;

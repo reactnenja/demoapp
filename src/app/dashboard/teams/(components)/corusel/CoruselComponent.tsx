@@ -16,7 +16,7 @@ import {
 } from "@/components/ui/carousel";
 import Link from "next/link";
 
-const CoruselComponent = () => {
+const CoruselComponent: React.FC = () => {
     return (
         <Carousel className="w-[420px]">
             <CarouselContent className="mx-auto">

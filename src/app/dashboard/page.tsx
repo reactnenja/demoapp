@@ -5,9 +5,9 @@ import {
     BreadcrumbList,
     BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
-import { BarChartComponents } from "./(components)/BarChart";
-import { PullRequest } from "./(components)/pullRequest/page";
-import { RoundedData } from "./(components)/rounededData/RoundedData";
+import BarChartComponents from "./(components)/BarChart";
+import PullRequest from "./(components)/pullRequest/PullRequest";
+import RoundedData from "./(components)/rounededData/RoundedData";
 
 const Dashboard = () => {
     return (

@@ -7,17 +7,16 @@ import {
     BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 import { useState } from "react";
-import CoruselComponent from "./(components)/corusel/CoruselComponent";
 import ButtonGroup from "./ButtonGroup";
 import InfoDisplay from "./InfoDisplay";
 
 const Teams = () => {
     const [info, setInfo] = useState("");
 
-    const handleClick = (role) => {
+    const handleClick = (role: any) => {
         switch (role) {
             case "Team":
-                setInfo(<CoruselComponent />);
+                setInfo("Team ma&#39;lumotlari bu yerda ko&#39;rsatiladi.");
                 break;
             case "Developer":
                 setInfo(

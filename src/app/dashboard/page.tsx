@@ -6,7 +6,6 @@ import {
     BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 import { BarChartComponents } from "./(components)/BarChart";
-import CardTeams from "./(components)/cardTeams/CardTeams";
 import { PullRequest } from "./(components)/pullRequest/page";
 import { RoundedData } from "./(components)/rounededData/RoundedData";
 
@@ -30,7 +29,6 @@ const Dashboard = () => {
                     <RoundedData />
                     <BarChartComponents />
                     <PullRequest />
-                    <CardTeams />
                 </div>
             </div>
         </div>

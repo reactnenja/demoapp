@@ -14,6 +14,7 @@ import {
     CarouselNext,
     CarouselPrevious,
 } from "@/components/ui/carousel";
+import Image from "next/image";
 import Link from "next/link";
 
 const CoruselComponent: React.FC = () => {
@@ -24,7 +25,7 @@ const CoruselComponent: React.FC = () => {
                 <CarouselItem>
                     <Card className="w-96">
                         <CardHeader className="">
-                            <img
+                            <Image
                                 src="https://avatar.iran.liara.run/public/47"
                                 alt="logo"
                                 className="mx-auto"
@@ -51,7 +52,7 @@ const CoruselComponent: React.FC = () => {
                 <CarouselItem>
                     <Card className="w-96">
                         <CardHeader>
-                            <img
+                            <Image
                                 src="https://avatar.iran.liara.run/public/75"
                                 alt="logo"
                                 className="mx-auto"
@@ -78,7 +79,7 @@ const CoruselComponent: React.FC = () => {
                 <CarouselItem>
                     <Card className="w-96">
                         <CardHeader>
-                            <img
+                            <Image
                                 src="https://avatar.iran.liara.run/public/23"
                                 alt="logo"
                                 className="mx-auto"
@@ -105,7 +106,7 @@ const CoruselComponent: React.FC = () => {
                 <CarouselItem>
                     <Card className="w-96">
                         <CardHeader>
-                            <img
+                            <Image
                                 src="https://avatar.iran.liara.run/public/37"
                                 alt="logo"
                                 className="mx-auto"
@@ -133,7 +134,7 @@ const CoruselComponent: React.FC = () => {
                 <CarouselItem>
                     <Card className="w-96">
                         <CardHeader className="">
-                            <img
+                            <Image
                                 src="https://avatar.iran.liara.run/public/47"
                                 alt="logo"
                                 className="mx-auto"
@@ -160,7 +161,7 @@ const CoruselComponent: React.FC = () => {
                 <CarouselItem>
                     <Card className="w-96">
                         <CardHeader>
-                            <img
+                            <Image
                                 src="https://avatar.iran.liara.run/public/75"
                                 alt="logo"
                                 className="mx-auto"
@@ -187,7 +188,7 @@ const CoruselComponent: React.FC = () => {
                 <CarouselItem>
                     <Card className="w-96">
                         <CardHeader>
-                            <img
+                            <Image
                                 src="https://avatar.iran.liara.run/public/23"
                                 alt="logo"
                                 className="mx-auto"
@@ -214,7 +215,7 @@ const CoruselComponent: React.FC = () => {
                 <CarouselItem>
                     <Card className="w-96">
                         <CardHeader>
-                            <img
+                            <Image
                                 src="https://avatar.iran.liara.run/public/37"
                                 alt="logo"
                                 className="mx-auto"

@@ -9,7 +9,7 @@ import {
     DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import Image from "next/image";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation"; // Updated import for Next.js 13+
 import { useEffect, useState } from "react";
 
 const Header = () => {

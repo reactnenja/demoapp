@@ -36,7 +36,11 @@ const Login = () => {
             );
             const data = await response.json();
             console.log("User Info:", data.user);
-            if (data.user === data.user.access_token) {
+
+            // Save data to localStorage
+            localStorage.setItem("user", JSON.stringify(data.user));
+
+            if (data.user.access_token) {
                 setTimeout(() => {
                     toast.success("Successfully logged in!");
                     setIsLoading(false);

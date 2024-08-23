@@ -28,9 +28,7 @@ const Header = () => {
                                 />
                             </DropdownMenuTrigger>
                             <DropdownMenuContent>
-                                <DropdownMenuLabel>
-                                    My Account
-                                </DropdownMenuLabel>
+                                <DropdownMenuLabel>{}</DropdownMenuLabel>
                                 <DropdownMenuSeparator />
                                 <DropdownMenuItem>Profile</DropdownMenuItem>
                                 <DropdownMenuItem>Billing</DropdownMenuItem>

@@ -36,9 +36,7 @@ const Login = () => {
             );
             const data = await response.json();
             console.log("User Info:", data.user);
-
-            // Save data to localStorage
-            localStorage.setItem("user", JSON.stringify(data.user));
+            localStorage.setItem("token-info", JSON.stringify(data.user));
 
             if (data.user.access_token) {
                 setTimeout(() => {

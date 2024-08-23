@@ -35,7 +35,7 @@ type Developer = {
 const developers: Developer[] = [
     {
         name: "Alice",
-        image: "/images/alice.jpg",
+        image: "/vercel.svg",
         progress: 80,
         pushes: 120,
         role: "frontend",
@@ -43,7 +43,7 @@ const developers: Developer[] = [
     },
     {
         name: "Bob",
-        image: "/images/bob.jpg",
+        image: "/vercel.svg",
         progress: 60,
         pushes: 85,
         role: "backend",
@@ -51,7 +51,7 @@ const developers: Developer[] = [
     },
     {
         name: "Charlie",
-        image: "/images/charlie.jpg",
+        image: "/vercel.svg",
         progress: 90,
         pushes: 150,
         role: "designer",
@@ -59,7 +59,7 @@ const developers: Developer[] = [
     },
     {
         name: "Diana",
-        image: "/images/diana.jpg",
+        image: "/vercel.svg",
         progress: 70,
         pushes: 95,
         role: "pm",
@@ -67,7 +67,7 @@ const developers: Developer[] = [
     },
     {
         name: "Eve",
-        image: "/images/eve.jpg",
+        image: "/vercel.svg",
         progress: 85,
         pushes: 130,
         role: "graphic",
@@ -92,8 +92,8 @@ const Developers = () => {
     });
 
     return (
-        <div className="absolute top-20 left-20 w-[calc(100%-80px)] p-4">
-            <div className="p-4 max-w-full h-full overflow-y-auto">
+        <div className="relative top-20 left-20 w-[calc(100%-80px)] p-4">
+            <div className="p-4 w-full h-full overflow-y-auto behavior">
                 {/* Breadcrumb */}
                 <div className="w-full border-b-2 mb-4 border-solid p-2 capitalize text-center">
                     <Breadcrumb>
@@ -119,7 +119,6 @@ const Developers = () => {
                         <Select
                             value={selectedFilter}
                             onValueChange={(value) => setSelectedFilter(value)}
-                            className="mb-4 text-black w-full"
                         >
                             <SelectTrigger className="w-full">
                                 <SelectValue placeholder="Select a role" />

@@ -8,7 +8,7 @@ import {
 } from "@/components/ui/tooltip";
 
 import {
-    GitCommitVertical,
+    CodeXml,
     GitPullRequest,
     Home,
     LineChart,
@@ -49,14 +49,14 @@ const Sidebar = () => {
                     <Tooltip>
                         <TooltipTrigger asChild>
                             <Link
-                                href="/dashboard/commits"
+                                href="/dashboard/developers"
                                 className="flex h-10 w-10 items-center justify-center rounded-lg text-muted-foreground transition-colors hover:text-foreground md:h-8  text-black p-2 md:w-12"
                             >
-                                <GitCommitVertical className="h-5 w-5" />
-                                <span className="sr-only">Commits</span>
+                                <CodeXml className="h-5 w-5" />
+                                <span className="sr-only">Developers</span>
                             </Link>
                         </TooltipTrigger>
-                        <TooltipContent side="right">Commits</TooltipContent>
+                        <TooltipContent side="right">Developers</TooltipContent>
                     </Tooltip>
                     <Tooltip>
                         <TooltipTrigger asChild>

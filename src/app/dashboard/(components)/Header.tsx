@@ -33,7 +33,7 @@ const Header = () => {
                             <DropdownMenu>
                                 <DropdownMenuTrigger className="border-slate-600 rounded-full border-2">
                                     <Image
-                                        src="/default-avatar.png"
+                                        src=""
                                         className="h-10 w-10 rounded-full"
                                         alt="User Avatar"
                                         width={40}

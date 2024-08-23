@@ -15,7 +15,7 @@ const Header = () => {
         <div className="fixed top-0 z-50 left-0 w-full h-20 bg-white shadow-md">
             <div className="container-full mx-auto px-4 h-full">
                 <div className="flex justify-between items-center h-full px-4">
-                    <h1 className="text-3xl font-bold">RepoLink</h1>
+                    <h1 className="text-3xl font-bold">CodeFlow</h1>
                     <div className="flex gap-2">
                         <DropdownMenu>
                             <DropdownMenuTrigger className="border-slate-600 rounded-full border-2">

@@ -19,6 +19,7 @@ import {
     SelectTrigger,
     SelectValue,
 } from "@/components/ui/select";
+import Image from "next/image";
 import { useState } from "react";
 
 // Developer type
@@ -167,7 +168,7 @@ const Developers = () => {
                                 <CardTitle>{dev.name}</CardTitle>
                             </CardHeader>
                             <CardContent>
-                                <img
+                                <Image
                                     src={dev.image}
                                     alt={dev.name}
                                     className="w-full h-32 object-cover mb-4"

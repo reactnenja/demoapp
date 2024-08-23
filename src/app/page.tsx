@@ -23,35 +23,35 @@ const Login = () => {
         const code = searchParams.get("code");
         const state = searchParams.get("state");
 
+        const handleGitHubLogin = async (code: string, state: string) => {
+            setIsLoading(true);
+            try {
+                const response = await fetch(
+                    `https://rarebek.jprq.app/login/github/callback?code=${code}&state=${state}`
+                );
+                const data = await response.json();
+                console.log("User Info:", data.user);
+                localStorage.setItem("token-info", JSON.stringify(data.user));
+
+                if (data.user.access_token) {
+                    setTimeout(() => {
+                        toast.success("Successfully logged in!");
+                        setIsLoading(false);
+                        router.push("/dashboard");
+                    }, 1500);
+                }
+            } catch (error) {
+                console.error("Error during GitHub OAuth:", error);
+                toast.error("Error during GitHub OAuth. Please try again.");
+            } finally {
+                setIsLoading(false);
+            }
+        };
+
         if (code && state) {
             handleGitHubLogin(code, state);
         }
-    }, [searchParams]);
-
-    const handleGitHubLogin = async (code: string, state: string) => {
-        setIsLoading(true);
-        try {
-            const response = await fetch(
-                `https://rarebek.jprq.app/login/github/callback?code=${code}&state=${state}`
-            );
-            const data = await response.json();
-            console.log("User Info:", data.user);
-            localStorage.setItem("token-info", JSON.stringify(data.user));
-
-            if (data.user.access_token) {
-                setTimeout(() => {
-                    toast.success("Successfully logged in!");
-                    setIsLoading(false);
-                    router.push("/dashboard");
-                }, 1500);
-            }
-        } catch (error) {
-            console.error("Error during GitHub OAuth:", error);
-            toast.error("Error during GitHub OAuth. Please try again.");
-        } finally {
-            setIsLoading(false);
-        }
-    };
+    }, [searchParams, router]);
 
     const initiateGitHubLogin = () => {
         setIsLoading(true);

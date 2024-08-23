@@ -12,9 +12,17 @@ import Image from "next/image";
 import { useRouter } from "next/navigation"; // Updated import for Next.js 13+
 import { useEffect, useState } from "react";
 
+// Define a type for the user object
+interface User {
+    data: {
+        name?: string;
+        avatarUrl?: string;
+    };
+}
+
 const Header = () => {
     const [isLoggedin, setIsLoggedin] = useState(false);
-    const [user, setUser] = useState(null);
+    const [user, setUser] = useState<User | null>(null); // Initialize user state with User type or null
     const router = useRouter();
 
     useEffect(() => {
